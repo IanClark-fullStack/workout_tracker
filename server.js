@@ -16,12 +16,12 @@ app.use(express.static("public"));
 // app.use(require('./routes/index.js'))
 app.use(require('./routes/static.js'))
 app.use(require('./routes/workouts.js'))
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout_db",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Cluster0",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify: false,
         useCreateIndex: true,
+        useFindAndModify: false,
     }
 );
 
