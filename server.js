@@ -14,9 +14,8 @@ app.use(express.json());
 app.use(express.static("public"));
 // app.use(routes); // Connected 
 // app.use(require('./routes/index.js'))
-app.use(require('./routes/static.js'))
-app.use(require('./routes/workouts.js'))
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Cluster0",
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout_db",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -24,6 +23,17 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Cluster0",
         useFindAndModify: false,
     }
 );
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Cluster0",
+//     {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//         useCreateIndex: true,
+//         useFindAndModify: false,
+//     }
+// );
+
+app.use(require('./routes/static.js'));
+app.use(require('./routes/workouts.js'));
 
 
 app.listen(PORT, () => {
