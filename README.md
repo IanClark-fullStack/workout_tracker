@@ -56,17 +56,12 @@ Keep in mind, seeding the database is optional. But recommended for a quick and 
 | Start up | Add Data | View |
 | :---         |     :---:      |          ---: |
 | ![image](https://user-images.githubusercontent.com/90655370/143153553-eb431f47-a529-4c9e-8801-6c6d5969ac45.png)  | ![image](https://user-images.githubusercontent.com/90655370/143157240-0dfdba57-062b-4eaf-9ee4-1a59f578258e.png)    | ![image](https://user-images.githubusercontent.com/90655370/143157329-df3438bf-1c8d-486b-adb3-838e42155ee6.png)    |
-|   | git status     | git status    |
-
 
 
 
   ## Contributing
   ------
   Fork, contact, critique
-
-  ## Tests
-  ------
   
   
   ## Questions
